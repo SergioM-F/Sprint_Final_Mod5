@@ -28,7 +28,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="200dp"
                 android:layout_height="150dp"
-                android:contentDescription="@string/todo"
+                android:contentDescription="@string/ImageCalzado"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -37,25 +37,28 @@
 
             <TextView
                 android:id="@+id/textViewNombreCard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="@string/textview"
+                android:layout_width="145dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/textviewZapato"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.576"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
 
             <TextView
                 android:id="@+id/textViewPrecioCard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="136dp"
+                android:layout_height="42dp"
                 android:layout_marginTop="24dp"
-                android:text="@string/textview"
+                android:text="@string/textviewPrecio"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="@+id/textViewNombreCard"
                 app:layout_constraintStart_toStartOf="@+id/textViewNombreCard"
-                app:layout_constraintTop_toBottomOf="@+id/textViewNombreCard" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewNombreCard"
+                tools:ignore="TextSizeCheck" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

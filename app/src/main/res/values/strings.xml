@@ -2,6 +2,9 @@
     <string name="app_name">Shoes Tap</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="todo">TODO</string>
-    <string name="textview">TextView</string>
+    <string name="ImageCalzado">Imagen Zapato</string>
+    <string name="textviewZapato">Texto Detalle Calzado</string>
+    <string name="textviewPrecio">Texto Detalle Valor</string>
+    <string name="botonVolver">Volver</string>
+    <string name="botonAgregar">Agregar al Carrito de Compras</string>
 </resources>
