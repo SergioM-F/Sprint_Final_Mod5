@@ -7,4 +7,7 @@
     <string name="textviewPrecio">Texto Detalle Valor</string>
     <string name="botonVolver">Volver</string>
     <string name="botonAgregar">Agregar al Carrito de Compras</string>
+    <string name="total_a_pagar_es">Total a Pagar es:</string>
+    <string name="comprar">Comprar</string>
+    <string name="todo">TODO</string>
 </resources>
