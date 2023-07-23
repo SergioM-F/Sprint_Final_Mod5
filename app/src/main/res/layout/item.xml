@@ -25,8 +25,8 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="200dp"
+                android:id="@+id/imageViewProducItem"
+                android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:contentDescription="@string/ImageCalzado"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -40,10 +40,11 @@
                 android:layout_width="145dp"
                 android:layout_height="38dp"
                 android:layout_marginTop="28dp"
-                android:textSize="24sp"
+                android:textColor="#000000"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.576"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/imageViewProducItem"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TextSizeCheck" />
 
@@ -52,7 +53,8 @@
                 android:layout_width="136dp"
                 android:layout_height="42dp"
                 android:layout_marginTop="24dp"
-                android:textSize="24sp"
+                android:textColor="#000000"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/textViewNombreCard"
                 app:layout_constraintStart_toStartOf="@+id/textViewNombreCard"
                 app:layout_constraintTop_toBottomOf="@+id/textViewNombreCard"

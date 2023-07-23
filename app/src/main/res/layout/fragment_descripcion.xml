@@ -9,7 +9,7 @@
     tools:context=".DescripcionFragment">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageViewProductDescrip"
         android:layout_width="226dp"
         android:layout_height="315dp"
         android:contentDescription="@string/ImageCalzado"
@@ -27,9 +27,9 @@
         android:layout_marginBottom="64dp"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/textViewPrecioDescrip"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewProductDescrip"
         app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+        app:layout_constraintStart_toStartOf="@+id/imageViewProductDescrip" />
 
     <TextView
         android:id="@+id/textViewPrecioDescrip"
