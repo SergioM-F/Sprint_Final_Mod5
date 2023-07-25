@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import cl.samf.sprint_final_mod5.databinding.FragmentCarritoBinding
+import androidx.navigation.fragment.findNavController
 import cl.samf.sprint_final_mod5.databinding.FragmentDescripcionBinding
 import coil.load
 
@@ -53,6 +54,10 @@ class CarritoFragment : Fragment() {
         })
 
         binding.recyclerViewCarrito.adapter=adapter
+
+        binding.floatingActionButton.setOnClickListener{
+            findNavController().navigate(R.id.action_carritoFragment_to_inicioFragment)
+        }
 
         }
 
