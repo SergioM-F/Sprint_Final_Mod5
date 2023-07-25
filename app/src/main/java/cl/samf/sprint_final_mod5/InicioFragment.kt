@@ -22,9 +22,9 @@ class InicioFragment : Fragment() {
 
     private lateinit var binding: FragmentInicioBinding
 
-    // private lateinit var adapter: AdaptaderProductos
+
     private val productos: MutableList<Producto> = ProductosList.productos
-    //private lateinit var navController: NavController
+
 
 
     // TODO: Rename and change types of parameters
@@ -45,18 +45,16 @@ class InicioFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
         initAdapter()
 
-        /* override fun onClickItem(item: Producto) {
-
-        val bundle = Bundle().apply {
-            putString("nomProducto", item.nomProducto)
-            putString("urlProducto", item.urlProducto)
-            putInt("valorProducto", item.valorProducto)
+        binding.floatingActionButtonCarrito.setOnClickListener {
+            val navController = findNavController()
+            navController.navigate(R.id.action_inicioFragment_to_carritoFragment)
         }
 
 
-        findNavController().navigate(R.id.action_inicioFragment_to_descripcionFragment, bundle)*/
     }
 
     private fun initAdapter() {
@@ -77,7 +75,9 @@ class InicioFragment : Fragment() {
                 }
             })
             binding.recyclerViewInicio.adapter=adapter
+
     }
+
 }
 
 

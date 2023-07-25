@@ -13,6 +13,9 @@
             android:id="@+id/action_inicioFragment_to_descripcionFragment"
             app:destination="@id/descripcionFragment" >
         </action>
+        <action
+            android:id="@+id/action_inicioFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
     </fragment>
     <fragment
         android:id="@+id/descripcionFragment"
