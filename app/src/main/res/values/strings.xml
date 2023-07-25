@@ -11,4 +11,5 @@
     <string name="comprar">Comprar</string>
     <string name="todo">TODO</string>
     <string name="botonCarrito">TODO</string>
+    <string name="vaciar_carrito">Vaciar Carrito</string>
 </resources>

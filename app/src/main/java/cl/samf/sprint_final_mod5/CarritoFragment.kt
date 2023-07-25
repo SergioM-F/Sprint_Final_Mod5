@@ -58,10 +58,28 @@ class CarritoFragment : Fragment() {
         binding.floatingActionButton.setOnClickListener {
             findNavController().navigate(R.id.action_carritoFragment_to_inicioFragment)
         }
+        
+        binding.buttonVaciarCarrito.setOnClickListener{
+            compraList.clear()
+            adapter.notifyDataSetChanged()
+            
+            saveSelectedProductsToSharedPreferences(compraList)
+        }
+        
     }
 
+    private fun saveSelectedProductsToSharedPreferences(compraList: MutableList<Producto>) {
 
-        private fun getSelectedProductsFromSharedPreferences(): MutableList<Producto> {
+        val gson = Gson()
+        val sharedPref =
+            requireContext().getSharedPreferences("Myprefs", Context.MODE_PRIVATE)
+        val json = gson.toJson(compraList)
+        val editor = sharedPref.edit()
+        editor.putString("SelectedProducts", json)
+        editor.apply()  }
+
+
+    private fun getSelectedProductsFromSharedPreferences(): MutableList<Producto> {
             val gson = Gson()
             val sharedPref =
                 requireContext().getSharedPreferences("Myprefs", Context.MODE_PRIVATE)
