@@ -22,8 +22,8 @@
 
     <TextView
         android:id="@+id/textViewNombreDescrip"
-        android:layout_width="150dp"
-        android:layout_height="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/textViewPrecioDescrip"

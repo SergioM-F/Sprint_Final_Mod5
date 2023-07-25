@@ -8,15 +8,31 @@
         android:id="@+id/inicioFragment"
         android:name="cl.samf.sprint_final_mod5.InicioFragment"
         android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" />
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_descripcionFragment"
+            app:destination="@id/descripcionFragment" >
+        </action>
+    </fragment>
     <fragment
         android:id="@+id/descripcionFragment"
         android:name="cl.samf.sprint_final_mod5.DescripcionFragment"
         android:label="fragment_descripcion"
-        tools:layout="@layout/fragment_descripcion" />
+        tools:layout="@layout/fragment_descripcion" >
+        <action
+            android:id="@+id/action_descripcionFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+        <action
+            android:id="@+id/action_descripcionFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/carritoFragment"
         android:name="cl.samf.sprint_final_mod5.CarritoFragment"
         android:label="fragment_carrito"
-        tools:layout="@layout/fragment_carrito" />
+        tools:layout="@layout/fragment_carrito" >
+        <action
+            android:id="@+id/action_carritoFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
 </navigation>
